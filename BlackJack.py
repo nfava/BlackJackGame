@@ -4,7 +4,7 @@ SUITS = ["Hearts", "Diamonds", "Clubs", "Spades"]
 RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
 MIN_BET = 5
 START_BANKROLL = 100
-
+SECOND_BANK =  ""
 
 def create_deck():
     deck = [(rank, suit) for suit in SUITS for rank in RANKS]
@@ -160,7 +160,6 @@ def main():
         again = input("\nPlay another round? (y/n): ").strip().lower()
         if not again.startswith("y"):
             break
-
     print("\nThanks for playing!")
     print(f"Final bankroll: ${bankroll}")
 
